@@ -1,0 +1,13 @@
+$black: #000000;
+$grey: #8b8b8b;
+$gold: #bea67c;
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$mobile-width: 480px;
