@@ -71,7 +71,7 @@ header {
 	font-size: 12px;
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	transition: bottom 0.5s;
+	transition: bottom 0.5s ease;
 	@media (max-width: 500px) {
 		top: auto;
 		bottom: 150px;
@@ -123,45 +123,60 @@ header {
 	background-color: white;
 }
 
+.nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	img {
+		width: 275px;
+	@media (max-width: #{$mobile-width}) {
+		width: 60%;
+		padding:0;
+		}
+	}
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	margin-left: 50px;
+}
+
 nav {
 	display: flex;
+	width: 40%;
 	justify-content: space-between;
 	padding: 40px 0;
 	flex-direction: row;
 	align-items: center;
-	max-width:100%;
-	p {
+	li a {
 		color: $grey;
 		font-weight: bolder;
 		text-transform: uppercase;
 		font-size: 12px;
+		text-align: center;
 	}
-
 	@media (max-width: #{$mobile-width}) {
 		justify-content: flex-start;
 		padding:20px;
-	}
-
-	img {
-	padding: 0 60px;
-	@media (max-width: #{$mobile-width}) {
-		width: 60%;
-		padding:0;
-	}
 	}
 }
 
 ul {
 	list-style: none;
+	width: 100%;
 	display: flex;
-
+	justify-content: space-between;
+	padding-right: 30px;
 	@media (max-width: #{$mobile-width}) {
 	display: none;
 	}
 }
 
 li {
-	padding: 0 50px;
+	// padding: 0 50px;
+	width: 33%;
+	text-align: center;
 	@media (max-width: #{$tablet-width}) {
 		padding: 0 20px;
 		text-align: center;
@@ -264,6 +279,10 @@ li {
 	transition: color 0.2s ease,background-color 0.2s ease;
 	@media (max-width: 320px) {
 		width: 100%
+	}
+
+	@media (max-width: $mobile-width) {
+		margin: 0 auto;
 	}
 }
 
@@ -620,7 +639,7 @@ li {
 	background-repeat: no-repeat;
 	height: 100vh;
 	padding: 40px;
-	transition: 0.2 ease all;
+	transition: 0.2s ease all;
 
 	@media (max-width:1000px) {
 		background-image: url("/assets/AboutImageEmpty.png");
@@ -637,14 +656,18 @@ li {
 }
 
 .introduction__text {
-	width: 40%;
+	width: 45%;
+
 	@media (max-width:1000px) {
+		width: 70%;
+	}
+	@media (min-width: $tablet-width) {
+		margin: 20px;
+	}
+	@media (max-width: $tablet-width){
 		width: 90%;
 	}
-	@media (min-width: #{$tablet-width}) {
-		width: 90%;
-		margin: 0 20px;
-	}
+
 	@media (max-width: $mobile-width) {
 		width: 100%;
 		padding: 20px 0;
@@ -653,15 +676,16 @@ li {
 		font-size: 42px;
 		color: $gold;
 		transition: 0.2s ease all;
-		@media (max-width:1000px) {
-		width: 60%;
-		}
-		@media (max-width: #{$tablet-width}) {
-		width: 90%;
-		}
+
+		// @media (max-width:{$tablet-width}) {
+		// width: 60%;
+		// }
+		// @media (max-width: #{$tablet-width}) {
+		// width: 90%;
+		// }
 
 		@media (max-width: 575px) {
-			font-size: 24px;
+			font-size: 30px;
 			padding-top: 10px;
 		}
 		@media (max-width: 320px) {
@@ -704,11 +728,12 @@ li {
 	width: 12.5%;
 	align-items: center;
 	@media (max-width: #{$tablet-width}){
-		width: 33%;
+		width: 16%;
 		margin:20px 0;
 	}
 
 	@media (max-width: #{$mobile-width}) {
+		width: 33%;
 		margin:20px 0px;
 	}
 
