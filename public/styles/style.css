@@ -195,7 +195,7 @@ header {
   text-transform: uppercase;
   letter-spacing: 3px;
   transition: bottom 0.5s ease; }
-  @media (max-width: 500px) {
+  @media (max-width: 650px) {
     .header__type {
       top: auto;
       bottom: 150px;
@@ -208,12 +208,15 @@ header {
   left: 55px;
   height: 55px;
   border: solid #bea67c 2px;
-  transition: top 0.5s; }
-  @media (max-width: 500px) {
+  transition: all 0.5s ease; }
+  @media (max-width: 650px) {
     .header__line--V {
       top: auto;
       bottom: 160px;
       left: 55px; } }
+
+h3.header__number {
+  font-weight: 400; }
 
 .header__number {
   position: absolute;
@@ -224,8 +227,8 @@ header {
   color: #bea67c;
   font-size: 50px;
   letter-spacing: 3px;
-  transition: top 0.5s; }
-  @media (max-width: 500px) {
+  transition: top 0.5s ease; }
+  @media (max-width: 650px) {
     .header__number {
       transform: rotate(90deg) translate(0, 0);
       top: auto;
@@ -244,17 +247,27 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between; }
-  .nav img {
+  @media (max-width: 450px) {
+    .nav {
+      justify-content: center; } }
+  .nav .logo img {
     width: 275px; }
     @media (max-width: 450px) {
-      .nav img {
-        width: 60%;
-        padding: 0; } }
+      .nav .logo img {
+        width: 75%; } }
 
 .logo {
   display: flex;
   align-items: center;
   margin-left: 50px; }
+  @media (max-width: 450px) {
+    .logo {
+      margin: 0;
+      justify-content: center; } }
+  @media (max-width: 450px) {
+    .logo img {
+      width: 75%;
+      padding-top: 20px; } }
 
 nav {
   display: flex;
@@ -265,14 +278,16 @@ nav {
   align-items: center; }
   nav li a {
     color: #8b8b8b;
-    font-weight: bolder;
+    font-weight: bold;
     text-transform: uppercase;
     font-size: 12px;
     text-align: center; }
-  @media (max-width: 450px) {
+  @media (max-width: 650px) {
     nav {
       justify-content: flex-start;
-      padding: 20px; } }
+      padding: 20px;
+      display: none;
+      visibility: hidden; } }
 
 ul {
   list-style: none;
@@ -305,6 +320,7 @@ li {
   .header__text h1 {
     letter-spacing: 3px;
     font-family: 'Raleway', sans-serif;
+    font-weight: 600;
     text-transform: uppercase;
     font-size: 80px;
     margin-left: 5px;
@@ -313,9 +329,13 @@ li {
     @media (max-width: 450px) {
       .header__text h1 {
         font-size: 50px; } }
+    @media (max-width: 320px) {
+      .header__text h1 {
+        font-size: 45px;
+        padding-left: 10px; } }
   .header__text h3 {
     font-family: 'Raleway', sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     color: white;
     font-size: 27px;
     text-transform: uppercase;
@@ -337,9 +357,9 @@ li {
     padding-left: 20px; }
 
 .button__preview {
-  color: black;
+  color: #101010;
   width: 235px;
-  border: 2.2px black solid;
+  border: 2.2px #101010 solid;
   padding: 15px 0;
   font-size: 14px;
   text-align: center;
@@ -359,7 +379,7 @@ li {
   display: flex; }
 
 .button:hover {
-  color: black;
+  color: #101010;
   background-color: white; }
 
 .button2 {
@@ -493,7 +513,8 @@ li {
 
 .portfolio__project--title {
   font-size: 25px;
-  font-weight: bolder; }
+  font-weight: bold;
+  color: #101010; }
   @media (max-width: 450px) {
     .portfolio__project--title {
       padding-bottom: 15px; } }
@@ -516,6 +537,7 @@ li {
 
 .portfolio__numberL {
   position: absolute;
+  font-weight: 600;
   bottom: 32px;
   right: -100px;
   font-size: 40px; }
@@ -558,6 +580,7 @@ li {
 
 .portfolio__numberR {
   position: absolute;
+  font-weight: 600;
   bottom: 32px;
   left: -100px;
   font-size: 40px; }
@@ -601,12 +624,13 @@ li {
 .portfolio__bigtextR {
   color: #bea67c;
   font-size: 100px;
-  font-weight: bolder;
+  font-weight: bold;
   position: relative;
   bottom: 80px;
   text-align: right;
   padding: 10px;
   z-index: -10;
+  color: #bea67c;
   opacity: 0.2;
   filter: alpha(opacity=20); }
   @media (max-width: 450px) {
@@ -616,12 +640,13 @@ li {
 .portfolio__bigtextL {
   color: #bea67c;
   font-size: 100px;
-  font-weight: bolder;
+  font-weight: bold;
   z-index: -10;
   position: relative;
   bottom: 80px;
   text-align: left;
   padding: 10px;
+  color: #bea67c;
   opacity: 0.2;
   filter: alpha(opacity=20); }
   @media (max-width: 450px) {
@@ -631,13 +656,12 @@ li {
 .sectionHeader {
   font-size: 40px;
   margin: 40px;
-  color: black; }
+  color: #101010; }
   .sectionHeader h2 {
     font-size: 35px;
     text-transform: uppercase;
     padding: 7px;
-    letter-spacing: 2px;
-    color: black; }
+    letter-spacing: 2px; }
   .sectionHeader p {
     font-size: 15px;
     letter-spacing: 1px;
@@ -702,7 +726,8 @@ li {
   .introduction__text h3 {
     font-size: 42px;
     color: #bea67c;
-    transition: 0.2s ease all; }
+    transition: 0.2s ease all;
+    font-weight: 500; }
     @media (max-width: 575px) {
       .introduction__text h3 {
         font-size: 30px;
@@ -752,12 +777,12 @@ li {
   color: #8e7446; }
 
 .introduction__skills--name {
-  color: black;
+  color: #101010;
   font-weight: bold; }
 
 .footer__container {
   display: flex;
-  border: 2px solid black;
+  border: 2px solid #101010;
   margin: 30px;
   margin-top: 50px; }
   @media (max-width: 850px) {
@@ -865,14 +890,14 @@ textarea[name=message] {
   text-align: top;
   padding: 10px;
   margin: 5px;
-  border: 2px solid black; }
+  border: 2px solid #101010; }
 
 input[type=submit] {
   padding: 10px;
-  background-color: #000000;
+  background-color: #101010;
   color: white;
   width: 235px;
-  border: 2.2px black solid;
+  border: 2.2px #101010 solid;
   font-size: 14px;
   text-align: center;
   padding: 15px 0;
@@ -883,9 +908,9 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #bea67c;
-  color: #000000; }
+  color: #101010; }
 
 input {
   padding: 10px;
   margin: 5px;
-  border: 2px solid black; }
+  border: 2px solid #101010; }
