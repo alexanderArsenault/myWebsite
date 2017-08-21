@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600" rel="stylesheet">
 	<link rel="icon" href="assets/aLOGO.png">
 </head>
 <body>
@@ -34,6 +34,7 @@
 								<h1>Web <br/>Developer</h1>
 							</div>
 							<a href="#introduction"><div class="button">Learn More <i class="fa fa-long-arrow-right"></i></div></a>
+							<img id="mouse__pulse" src="assets/Mouse Arrow.png"/>
 					</div>
 					<h3 class="header__type">Front End Web Developer</h3>
 					<h3 class="header__number">01</h3>
@@ -45,11 +46,10 @@
 	</header>
 	<section class="introduction__skills">
 
+		<div class="wrapper">
 		<div class="sectionHeader">
 			<h2>Here's what I know</h2>
 		</div>
-
-		<div class="wrapper">
 			<div class="skills">
 				<div class="introduction__skills--box">
 					<div class="introduction__skills--icon"><i class="devicon-html5-plain"></i></div>
@@ -258,7 +258,7 @@
 	</section>
 </body>
 	<footer id="footer">
-		<div class="wrapper">
+		<div class="wrapper ">
 			<div class="footer__container">
 				<div class="footer__info">
 					<a href="#header"><img src="/assets/LogoBlack.png" alt=""></a>
@@ -289,6 +289,7 @@
 		</div>
 	</footer>
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<!-- <script src="src/pulse.js"></script> -->
 <script>
 
 $(function() {
@@ -304,7 +305,16 @@ $(function() {
       }
     }
   });
+
+    function Pulse(Target, State) {
+        //Every 750ms, fade between half and full opacity
+        $('#mouse__pulse').fadeTo(800, State?1:.4, function() {Pulse(Target, !State)});
+    };
+	Pulse();    
 });
+
+
+
 </script>
 
 </body>

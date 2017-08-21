@@ -132,6 +132,31 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+#headermicro {
+  margin: 0; }
+
+h1.micrositeheadline {
+  letter-spacing: 3px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 40px;
+  margin: 30px 5px;
+  color: #bea67c;
+  letter-spacing: 3px;
+  transition: all 0.2s ease; }
+
+video {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 800px;
+  height: auto; }
+
+@media (max-width: 1000px) {
+  .konsus {
+    display: none; } }
+
 * {
   padding: 0;
   margin: 0;
@@ -180,6 +205,19 @@ header {
   flex-direction: column;
   position: relative;
   width: 100%; }
+  .header__container img {
+    width: 17px;
+    height: auto;
+    margin-top: 60px;
+    margin-left: 10px; }
+
+@media (max-width: 450px) {
+  #mouse__pulse {
+    visibility: hidden; } }
+
+@media (max-width: 768px) {
+  #mouse__pulse {
+    margin-top: 100px; } }
 
 .header__type {
   position: absolute;
@@ -216,7 +254,7 @@ header {
       left: 55px; } }
 
 h3.header__number {
-  font-weight: 400; }
+  font-weight: 500; }
 
 .header__number {
   position: absolute;
@@ -247,12 +285,12 @@ h3.header__number {
   width: 100%;
   display: flex;
   justify-content: space-between; }
-  @media (max-width: 450px) {
+  @media (max-width: 650px) {
     .nav {
       justify-content: center; } }
   .nav .logo img {
     width: 275px; }
-    @media (max-width: 450px) {
+    @media (max-width: 650px) {
       .nav .logo img {
         width: 75%; } }
 
@@ -260,14 +298,15 @@ h3.header__number {
   display: flex;
   align-items: center;
   margin-left: 50px; }
-  @media (max-width: 450px) {
+  @media (max-width: 650px) {
     .logo {
-      margin: 0;
+      margin-top: 10px;
+      margin-left: 0;
       justify-content: center; } }
-  @media (max-width: 450px) {
+  @media (max-width: 650px) {
     .logo img {
       width: 75%;
-      padding-top: 20px; } }
+      padding-top: 30px; } }
 
 nav {
   display: flex;
@@ -310,29 +349,33 @@ li {
 .header__text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding-bottom: 40px;
-  margin-top: 135px; }
-  @media (max-width: 450px) {
+  margin-top: 60px; }
+  @media (max-width: 768px) {
     .header__text {
-      margin-top: 100px; } }
+      margin-top: 200px; } }
+  @media (max-width: 400px) {
+    .header__text {
+      margin-top: 140px; } }
   .header__text h1 {
     letter-spacing: 3px;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 80px;
+    font-size: 65px;
     margin-left: 5px;
     color: #bea67c;
-    letter-spacing: 3px; }
-    @media (max-width: 450px) {
+    letter-spacing: 3px;
+    transition: all 0.2s ease; }
+    @media (max-width: 768px) {
       .header__text h1 {
-        font-size: 50px; } }
-    @media (max-width: 320px) {
+        font-size: 80px; } }
+    @media (max-width: 400px) {
       .header__text h1 {
         font-size: 45px;
-        padding-left: 10px; } }
+        padding-left: 10px;
+        margin-left: 0; } }
   .header__text h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
@@ -564,7 +607,7 @@ li {
 
 .portfolio__line--line2L {
   position: absolute;
-  top: 187px;
+  top: 150px;
   right: -25px;
   width: 10%;
   border-radius: 10px;
@@ -607,7 +650,7 @@ li {
 
 .portfolio__line--line2R {
   position: absolute;
-  top: 187px;
+  top: 150px;
   left: -25px;
   width: 10%;
   border-radius: 10px;
@@ -655,7 +698,8 @@ li {
 
 .sectionHeader {
   font-size: 40px;
-  margin: 40px;
+  margin-left: 20px;
+  margin-bottom: 30px;
   color: #101010; }
   .sectionHeader h2 {
     font-size: 35px;
@@ -675,9 +719,7 @@ li {
   @media (max-width: 450px) {
     .introduction__container {
       font-size: 24px;
-      padding: 15px; } }
-  @media (max-width: 450px) {
-    .introduction__container {
+      padding: 15px;
       margin: 10px; } }
 
 .introduction__border {
@@ -783,16 +825,15 @@ li {
 .footer__container {
   display: flex;
   border: 2px solid #101010;
-  margin: 30px;
-  margin-top: 50px; }
+  margin: 40px 0; }
+  @media (max-width: 1280px) {
+    .footer__container {
+      margin: 40px; } }
   @media (max-width: 850px) {
     .footer__container {
       flex-direction: column;
       align-items: center; } }
   @media (max-width: 450px) {
-    .footer__container {
-      margin: 30px; } }
-  @media (max-width: 321px) {
     .footer__container {
       margin: 10px; } }
 
