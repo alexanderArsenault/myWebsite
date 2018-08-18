@@ -7,9 +7,15 @@
 	<link rel="stylesheet" href="public/styles/style.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600" rel="stylesheet">
-	<link rel="icon" href="assets/aLOGO.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#bea67c">
+	<meta name="msapplication-TileColor" content="#2d89ef">
+	<meta name="theme-color" content="#ffffff">
 </head>
 <body>
 	<header id="header">
@@ -31,10 +37,16 @@
 					<div class="header__content--box">
 						<div class="header__container">
 							<div class="header__text">
-								<h1>Web <br/>Developer</h1>
+								<h1>Front End<br/>Developer</h1>
 							</div>
-							<a href="#introduction"><div class="button">Learn More <i class="fa fa-long-arrow-right"></i></div></a>
-							<img id="mouse__pulse" src="assets/Mouse Arrow.png"/>
+
+							<p>After moving to Switzerland with my partner a few weeks ago, I'm looking to leverage Canada and Switzerland's <a href="https://www.eda.admin.ch/countries/canada/en/home/switzerland-and/youth-mobility-program.html">Youth Mobility Program</a> to explore new employment opportunities in the city of Zurich.</p>
+
+							<p> I've spent the past year in Cape Town, South Africa living and working abroad for PayFast - South Africa's largest payment gateway with nearly a million transactions a day and over 80,000 merchants. <span class="mobile-hide"> At PayFast, I operate as the de facto lead Front End Developer, mentoring two juniors and having ownership over the front end of all major releases - An opportunity I'm only leaving to facilitate a stay in Switzerland.</span> Now, after my departure from South Africa, I continue to work for the company by remote contract.</p>
+
+
+							<a id="heroButton" href="#introduction"><div class="button">Learn More <i class="fa fa-long-arrow-right"></i></div></a>
+							  <div id="scrollarrow" class="arrow bounce"><i class="fa fa-angle-down" aria-hidden="true"></i></div>
 					</div>
 					<h3 class="header__type">Front End Web Developer</h3>
 					<h3 class="header__number">01</h3>
@@ -52,28 +64,32 @@
 		</div>
 			<div class="skills">
 				<div class="introduction__skills--box">
-					<div class="introduction__skills--icon"><i class="devicon-html5-plain"></i></div>
-					<div class="introduction__skills--name">HTML5</div>
+					<div class="introduction__skills--icon"><i class="devicon-vuejs-plain"></i></div>
+					<div class="introduction__skills--name">Vue.js</div>
 				</div>
 				<div class="introduction__skills--box">
-					<div class="introduction__skills--icon"><i class="devicon-css3-plain"></i></div>
-					<div class="introduction__skills--name">CSS3</div>
+					<div class="introduction__skills--icon"><i class="devicon-laravel-plain"></i></div>
+					<div class="introduction__skills--name">Laravel</div>
 				</div>
 				<div class="introduction__skills--box">
 					<div class="introduction__skills--icon"><i class="devicon-javascript-plain"></i></div>
-					<div class="introduction__skills--name">Javascript</div>
+					<div class="introduction__skills--name">ES6</div>
+				</div>
+				<div class="introduction__skills--box">
+					<div class="introduction__skills--icon"><i class="devicon-nodejs-plain"></i></div>
+					<div class="introduction__skills--name">Node JS</div>
 				</div>
 				<div class="introduction__skills--box">
 					<div class="introduction__skills--icon"><i class="devicon-react-original"></i></div>
-					<div class="introduction__skills--name">React</div>
+					<div class="introduction__skills--name">React Native</div>
 				</div>
 				<div class="introduction__skills--box">
 					<div class="introduction__skills--icon"><i class="devicon-gulp-plain"></i></div>
 					<div class="introduction__skills--name">Gulp</div>
 				</div>
 				<div class="introduction__skills--box">
-					<div class="introduction__skills--icon"><i class="devicon-sass-original"></i></div>
-					<div class="introduction__skills--name">Sass</div>
+					<div class="introduction__skills--icon"><i class="devicon-webpack-plain"></i></div>
+					<div class="introduction__skills--name">Webpack</div>
 				</div>
 				<div class="introduction__skills--box">
 					<div class="introduction__skills--icon"><i class="devicon-github-plain"></i></div>
@@ -86,10 +102,6 @@
 				<div class="introduction__skills--box">
 					<div class="introduction__skills--icon"><i class="devicon-babel-plain"></i></div>
 					<div class="introduction__skills--name">Babel</div>
-				</div>
-				<div class="introduction__skills--box">
-					<div class="introduction__skills--icon"><i class="devicons devicons-sublime"></i></div>
-					<div class="introduction__skills--name">Sublime</div>
 				</div>
 				<div class="introduction__skills--box">
 					<div class="introduction__skills--icon"><i class="devicon-photoshop-plain"></i></div>
@@ -115,7 +127,7 @@
 							<h4> Open Doors, Open Data</h4>
 						</div>
 						<div class="portfolio__project--copy">
-							<p>This event gives an opportunity to embrace Toronto's heritage, but users are limited by their website's difficult information and poor UX. This web app allows users to see the location of each building and more information about it.</p>
+							<p>This event gives an opportunity to embrace Toronto's heritage, but visitors were often limited by their website's difficult information and poor UX. This web app used a city managed API to help users to see the location of each building and more information about it.</p>
 						</div>
 						<div class="portfolio__project--skills">
 							<h5>Built with:</h5>
@@ -184,11 +196,11 @@
 							<h4>Adopt a bird from the comfort of your home</h4>
 						</div>
 						<div class="portfolio__project--copy">
-							<p>For a mock Client project, my team navigated the PetFinder API to provide users with a map of all shelters nearby and the birds they have for adoption. </p>
+							<p>For a mock project, my team navigated the PetFinder API to provide users with a map of all shelters nearby and the birds they have for adoption. </p>
 						</div>
 						<div class="porfolio__project--skills">
 							<h5>Built with:</h5>
-							<h5 class="portfolio__buildTools">Javascript HTML5 Sass <span>Json API </span> </h5>
+							<h5 class="portfolio__buildTools"><span>Google Maps API</span> <span>Places Autocomplete API</span> <span>JSON API</span> Sass Javascript</h5>
 						</div>
 						<div class="portfolio__project--preview">
 							<a href=""></a>
@@ -211,34 +223,34 @@
 					<div class="portfolio__projectR">
 						<div class="portfolio__project--content">
 							<div class="portfolio__project--title">
-								<h3>Modern PSD Conversion</h3>
+								<h3>Client Projects</h3>
 							</div>
 							<div class="portfolio__project--tease">
 								<h4>I make websites too</h4>
 							</div>
 							<div class="portfolio__project--copy">
-								<p>Used HTML and CSS to create a pixel-perfect and responsive website from a PSD Template.</p>
+								<p>Often built from a design, I'll use the best fitting platform for the job to deliver a functional, pixel perfect website.</p>
 							</div>
 							<div class="portfolio__project--skills">
 								<h5>Built with:</h5>
-								<h5 class="portfolio__buildTools">HTML5 CSS3</h5>
+								<h5 class="portfolio__buildTools">SquareSpace Shopfiy Wordpress <span>Custom CSS</span> <span>Custom JS</span></h5>
 							</div>
 							<div class="portfolio__project--preview">
 								<a href=""></a>
 							</div>
 							<h2 class="portfolio__numberR">03.</h2>
 							<div class="button__preview" target="_blank">
-							<a target="_blank" href="http://alexanderarsenault.com/Modern">Live Preview</a>
+							<a target="_blank" href="https://samasamacpt.myshopify.com/">Live Preview</a>
 							</div>
 							<div class="portfolio__line--line1R"></div>	
 							<div class="portfolio__line--line2R"></div>
 							<div class="portfolio__line--line3R"></div>
 						</div>
 						<div class="portfolio__project--image">
-							<img src="/assets/modernMock.png" alt="">
+							<img src="/assets/samasama.png" alt="">
 						</div>
 					</div>
-					<div class="portfolio__bigtextR"> Modern PSD</div>
+					<div class="portfolio__bigtextR">Client Websites</div>
 				</div>
 		</div>
 	</section>
@@ -247,9 +259,18 @@
 			<div class="introduction__container">
 				<div class="introduction__content">
 					<div class="introduction__text">
-						<h3>Toronto based Web Developer <br/>
-						currently looking for opportunities</h3>
-						<p>As a developer with a background in advertising, I'm passionate about providing creative, engaging and user-friendly experiences. I believe a developer's role is to build the relationship between users and information, which is something I aim to reflect in my work. Think I'd be a good fit?</p>
+						<h3>Exploring Opportunities</h3>
+						<span class="mobile-show">
+							<p>At PayFast, I operate as the de facto lead Front End Developer, mentoring two juniors and having ownership over the front end of all major releases - An opportunity I'm only leaving to facilitate a stay in Switzerland. </p>
+							<p> Be it bringing creative to life, growing SaaS platforms, or continuing to overhaul and maintain large financial products, I'm interested in pursuing all options. If you think i'd be a good fit don't hesitate to reach out, I'd love to hear from you.</p>
+						</span>
+						<span class="mobile-hide ">
+							<p>As a developer with a background in advertising, I've always been passionate about providing creative, engaging and user-friendly experiences. I believe a developer's role is to build the relationship between users and information, and this user-centric philosophy is something that guides my approach to problem solving.</p>
+
+							<p>Working with clients over the years has strengthened my interpersonal and communication skills, and I consider workplace culture a very important part of employment. I'm confident that my proven technical ability and diverse skill set will allow me to jump into any team and make myself an asset. </p>
+
+							<p>Be it bringing creative to life, growing SaaS platforms, or continuing to grow and maintain large financial products, I'm interested in pursuing all options. If you think i'd be a good fit don't hesitate to reach out. I'd love to hear from you.</p>
+						</span>
 						<div class="button2"><a href="#footer">Say Hello</a></div>
 					</div>
 				</div>
@@ -257,39 +278,41 @@
 		</div>
 	</section>
 </body>
-	<footer id="footer">
-		<div class="wrapper ">
-			<div class="footer__container">
-				<div class="footer__info">
-					<a href="#header"><img src="/assets/LogoBlack.png" alt=""></a>
-					<ul class="footer__icons">
-						<li>
-							<a href="https://twitter.com/alexander_rsnl"><i class="fa fa-twitter"></i></a>
-						</li>
-						<li>
-							<a href="https://github.com/alexanderArsenault"><i class="fa fa-github"></i></a>
-						</li>
-						<li>
-							<a href="https://www.linkedin.com/in/alex-arsenault-a410884a/"><i class="fa fa-linkedin"></i></a>
-						</li>
-					</ul>
-					<h3> or email me at<a href="mailto:rsenaultc@gmail.com"> <span>rsenaultc@gmail.com</span></a></h3>
-
-				</div>
-				<div class="contact__form">
+<footer id="footer">
+	<div class="wrapper">
+		<div class="footer__container">
+			<div class="footer__information">
+				<a href="#header"><img src="/assets/LogoGOOD.png" alt=""></a>
+				<p>
+					<span>or email me at</span>
+					<a href="mailto:rsenaultc@gmail.com">rsenaultc@gmail.com</a>
+				</p>
+				<ul class="footer__icons">
+					<li>
+						<a href="https://codepen.io/alexander_rsnl/"><i class="fa fa-codepen"></i></a>
+					</li>
+					<li>
+						<a href="https://github.com/alexanderArsenault"><i class="fa fa-github"></i></a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/alex-arsenault-a410884a/"><i class="fa fa-linkedin"></i></a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__form">
 				<form action="https://formspree.io/rsenaultc@gmail.com" method="POST">
-						<input name="sendName" type="text" placeholder="Your Name">
-						<input name="sendEmail" type="email" placeholder="Your Email">
-						<input name="subject" type="text" placeholder="Subject">
-						<textarea type="textarea" placeholder="Message" name="message"></textarea>
-						<input type="submit">
-					</form>
-				</div>
+					<input name="sendName" type="text" placeholder="Your Name">
+					<input name="sendEmail" type="email" placeholder="Your Email">
+					<input name="subject" type="text" placeholder="Subject">
+					<textarea type="textarea" placeholder="Message" name="message"></textarea>
+					<input type="submit">
+				</form>
 			</div>
 		</div>
-	</footer>
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<!-- <script src="src/pulse.js"></script> -->
+	</div>
+</footer>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="public/pulse.js"></script>
 <script>
 
 $(function() {
@@ -308,7 +331,7 @@ $(function() {
 
     function Pulse(Target, State) {
         //Every 750ms, fade between half and full opacity
-        $('#mouse__pulse').fadeTo(800, State?1:.4, function() {Pulse(Target, !State)});
+        $('#scrollarrow').fadeTo(800, State?.8:.4, function() {Pulse(Target, !State)});
     };
 	Pulse();    
 });
